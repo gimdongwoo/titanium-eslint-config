@@ -1,0 +1,72 @@
+<Alloy>
+  <Window id="win" title="Activity Transitions">
+    <ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
+
+    <ScrollView>
+      <View class="vbox">
+
+        <Label class="help">Ti.UI.Window.activityExitTransition</Label>
+        <Label class="help">Animation of Window A as Window B opens. Defaults to none.</Label>
+        <Picker id="activityExitTransition" class="tpad-s">
+          <Column>
+            <Row title="undefined"/>
+            <Row title="TRANSITION_EXPLODE"/>
+            <Row title="TRANSITION_FADE_IN"/>
+            <Row title="TRANSITION_FADE_OUT"/>
+            <Row title="TRANSITION_SLIDE_TOP"/>
+            <Row title="TRANSITION_SLIDE_RIGHT"/>
+            <Row title="TRANSITION_SLIDE_BOTTOM"/>
+            <Row title="TRANSITION_SLIDE_LEFT"/>
+            <Row title="TRANSITION_NONE"/>
+          </Column>
+        </Picker>
+
+        <Label class="help tpad">Ti.UI.Window.activityReenterTransition</Label>
+        <Label class="help">Animation of Window A as Window B closes. Defaults to A's exit transition.</Label>
+        <Picker id="activityReenterTransition" class="tpad-s">
+          <Column>
+            <Row title="undefined"/>
+            <Row title="TRANSITION_EXPLODE"/>
+            <Row title="TRANSITION_FADE_IN"/>
+            <Row title="TRANSITION_FADE_OUT"/>
+            <Row title="TRANSITION_SLIDE_TOP"/>
+            <Row title="TRANSITION_SLIDE_RIGHT"/>
+            <Row title="TRANSITION_SLIDE_BOTTOM"/>
+            <Row title="TRANSITION_SLIDE_LEFT"/>
+            <Row title="TRANSITION_NONE"/>
+          </Column>
+        </Picker>
+
+        <Label class="help tpad">Ti.UI.Window.activitySharedElementExitTransition</Label>
+        <Label class="help">Additional animation before shared elements use the enter transition set on A to animate from Window A to B.</Label>
+        <Picker id="activitySharedElementExitTransition" class="tpad-s">
+          <Column>
+            <Row title="undefined"/>
+            <Row title="TRANSITION_CHANGE_BOUNDS"/>
+            <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
+            <Row title="TRANSITION_CHANGE_TRANSFORM"/>
+            <Row title="TRANSITION_CHANGE_IMAGE_TRANSFORM"/>
+            <Row title="TRANSITION_NONE"/>
+          </Column>
+        </Picker>
+
+        <Label class="help tpad">Ti.UI.Window.activitySharedElementReenterTransition</Label>
+        <Label class="help">Additional transition after shared elements have used the return transition set on B to animate from Window B to A. Defaults to the exit transition.</Label>
+        <Picker id="activitySharedElementReenterTransition" class="tpad-s">
+          <Column>
+            <Row title="undefined"/>
+            <Row title="TRANSITION_CHANGE_BOUNDS"/>
+            <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
+            <Row title="TRANSITION_CHANGE_TRANSFORM"/>
+            <Row title="TRANSITION_CHANGE_IMAGE_TRANSFORM"/>
+            <Row title="TRANSITION_NONE"/>
+          </Column>
+        </Picker>
+
+        <Button class="tpad" onClick="openWindowA">Open Window A</Button>
+
+      </View>
+    </ScrollView>
+
+  </Window>
+</Alloy>

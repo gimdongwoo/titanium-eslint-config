@@ -1,0 +1,27 @@
+{
+  "name": "appc-sample-ti520",
+  "version": "1.0.0",
+  "description": "> **NOTE:** This Sample App requires Titanium >=5.2.2<5.3 and Alloy >=1.8.5 (part of AppC CLI >=5.2.2). It supports Android 4.x and iOS 9.x. Some examples might be restricted to specific platforms or devices.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcelerator-developer-relations/appc-sample-ti520.git"
+  },
+  "author": "Appcelerator",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/appcelerator-developer-relations/appc-sample-ti520/issues"
+  },
+  "homepage": "https://github.com/appcelerator-developer-relations/appc-sample-ti520#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

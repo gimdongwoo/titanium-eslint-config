@@ -1,0 +1,25 @@
+'#streetView': {
+
+  // We can set the position (but not the heading)
+  position: {
+    latitude: 37.3676332,
+    longitude: -121.9139205
+  }
+}
+
+'.buttons': {
+  top: 0,
+  right: 10,
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+
+  layout: 'vertical'
+}
+
+'Button': {
+  top: 10,
+  right: 0,
+  width: Ti.UI.SIZE,
+
+  backgroundColor: Alloy.CFG.brandSuccess
+}

@@ -1,0 +1,25 @@
+<Alloy>
+  <Window title="Live Photo">
+    <ScrollView>
+      <View class="vbox">
+
+        <Label class="help">Install this sample on an iPhone 6S, take a Live Photo using te Camera App (not yet supported via in-app camera) and select it here:</Label>
+
+        <Button class="tpad" onClick="openPhotoGallery">Ti.Media.openPhotoGallery()</Button>
+
+        <LivePhotoView id="livePhotoView" class="tpad" onStart="onLivePhotoViewStartStop" onStop="onLivePhotoViewStartStop" />
+
+        <Label class="help tpad">startPlaybackWithStyle()</Label>
+        <ButtonBar class="tpad-s" onClick="startPlaybackWithStyle">
+          <Labels>
+            <Label>FULL</Label>
+            <Label>HINT</Label>
+          </Labels>
+        </ButtonBar>
+
+        <Button class="tpad" onClick="stopPlayback">stopPlayback()</Button>
+
+      </View>
+    </ScrollView>
+  </Window>
+</Alloy>
