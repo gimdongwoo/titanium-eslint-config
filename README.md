@@ -16,6 +16,27 @@ ESLint environment to improve development efficiency of Axway(Appcelerator) Tita
 3. You can copy [.eslintrc](https://github.com/gimdongwoo/titanium-eslint-config/blob/master/.eslintrc) and [.eslintignore](https://github.com/gimdongwoo/titanium-eslint-config/blob/master/.eslintignore) from this repository and put them in the project root.
 
 
+## Disabling Rules with Inline Comments
+
+1. Disabling Block
+
+	```javascript
+	/* eslint-disable */
+
+	alert('foo');
+
+	/* eslint-enable */
+	```
+
+2. Disabling Line
+
+	```javascript
+	alert('foo'); // eslint-disable-line
+	```
+	
+See the [eslint documentation](http://eslint.org/docs/user-guide/configuring.html#disabling-rules-with-inline-comments) for more.
+
+
 ## Sample
 
 1. [appc-sample-ti520](https://github.com/gimdongwoo/titanium-eslint-config/tree/master/appc-sample-ti520)
