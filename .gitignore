@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+build
+Resources
+/appc-sample-ti520/i18n
+/appc-sample-ti520/platform

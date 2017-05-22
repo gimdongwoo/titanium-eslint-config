@@ -4,11 +4,17 @@
     "node": true
   },
   "rules": {
-    "new-cap": [2, { "capIsNewExceptions": [] }],
-    "indent": [2, 2, {"SwitchCase": 1}],
-    "quotes": [ 2, "single" ],
-    "linebreak-style": [ 2, "unix" ],
-    "semi": [ 2, "always" ],
+    "new-cap": ["warn", {
+      "newIsCap": true,
+      "capIsNewExceptions": ["L"]
+    }],
+    "indent": ["error", 2, {
+      "MemberExpression": 1,
+      "SwitchCase": 1
+    }],
+    "quotes": ["error", "single"],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
     "no-empty": 0,
     "no-trailing-spaces": ["error", { "skipBlankLines": true }],
     "spaced-comment": 0,
@@ -19,18 +25,31 @@
     "global-require": 0,
     "max-len": 0,
     "no-alert": 0,
-    "no-console": 0,
+    "no-console": ["warn", {
+      "allow": ["warn", "error", "log"]
+    }],
+    "no-native-reassign": ["error", {
+      "exceptions": ["$"]
+    }],
+    "no-extend-native": 0,
     "no-tabs": 0,
-    "no-unused-vars": 0,
-    "no-param-reassign": 0,
+    "no-unused-vars": ["warn", {
+      "vars": "all",
+      "args": "none",
+      "ignoreRestSiblings": false
+    }],
+    "no-param-reassign": warn,
     "no-underscore-dangle": 0,
     "no-unneeded-ternary": 0,
-    "no-use-before-define": 0,
+    "no-use-before-define": ["error", {
+      "functions": false,
+      "classes": true
+    }],
     "no-plusplus": 0,
     "padded-blocks": 0,
     "prefer-template": 0,
     "prefer-arrow-callback": 0,
-    "vars-on-top": 0,
+    "vars-on-top": warn,
     "wrap-iife": 0
   },
   "plugins": [
@@ -38,25 +57,26 @@
   "settings": {
   },
   "globals": {
-    "Ti": true,
-    "Titanium": true,
-    "Alloy": true,
-    "$": true,
-    "Backbone": true,
-    "OS_IOS": true,
-    "OS_ANDROID": true,
-    "_": true,
-    "ENV_DEV": true,
-    "ENV_TEST": true,
-    "ENV_PROD": true,
-    "DIST_ADHOC": true,
-    "DIST_STORE": true,
-    "L": true,
-    "Widget": true,
-    "WPATH": true,
-    "App": true,
-    "AvImageview": true,
-    "TiImageCache": true,
+    "Ti": false,
+    "Titanium": false,
+    "Alloy": false,
+    "$": false,
+    "Backbone": false,
+    "OS_IOS": false,
+    "OS_ANDROID": false,
+    "_": false,
+    "ENV_DEV": false,
+    "ENV_TEST": false,
+    "ENV_PRODUCTION": false,
+    "ENV_PROD": false,
+    "DIST_ADHOC": false,
+    "DIST_STORE": false,
+    "L": false,
+    "alert": false,
+    "console": false,
+    "Widget": false,
+    "WPATH": false,
+    "App": false,
     "Parse": true
   }
 }
