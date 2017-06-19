@@ -10,7 +10,7 @@ ESLint environment to improve development efficiency of Axway(Appcelerator) Tita
 2. Install eslint and config.
 
 	```console
-	$ npm install --save-dev eslint-config-airbnb-base eslint@3
+	$ npm install --save-dev eslint-config-airbnb-base eslint-plugin-import eslint@3
 	```
 
 3. You can copy [.eslintrc](https://github.com/gimdongwoo/titanium-eslint-config/blob/master/.eslintrc) and [.eslintignore](https://github.com/gimdongwoo/titanium-eslint-config/blob/master/.eslintignore) from this repository and put them in the project root.
